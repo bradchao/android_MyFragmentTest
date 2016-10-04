@@ -5,17 +5,14 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     >
-    <fragment
-        android:name="brad.tw.myfragmenttest.F1Fragment"
+    <Button
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:text="Go"
+        android:onClick="go"
         />
-    <fragment
-        android:name="brad.tw.myfragmenttest.F2Fragment"
+    <FrameLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_weight="1"
-        />
-
+        android:layout_height="match_parent"/>
 </LinearLayout>
