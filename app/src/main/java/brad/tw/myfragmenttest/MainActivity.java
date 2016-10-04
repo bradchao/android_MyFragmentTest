@@ -37,6 +37,13 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    F1Fragment getF1(){
+        return f1;
+    }
+    F2Fragment getF2(){
+        return f2;
+    }
+
     public void b1(View v){
 
     }
