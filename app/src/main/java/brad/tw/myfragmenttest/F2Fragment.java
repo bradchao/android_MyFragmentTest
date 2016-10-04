@@ -23,8 +23,8 @@ public class F2Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        View view = inflater.inflate(R.layout.fragment_f1, container, false);
-        tv = (TextView)view.findViewById(R.id.f1_tv);
+        View view = inflater.inflate(R.layout.fragment_f2, container, false);
+        tv = (TextView)view.findViewById(R.id.f2_tv);
         tv.setText("Hello, TV2");
         return view;
     }

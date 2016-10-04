@@ -11,6 +11,7 @@ public class MainActivity extends AppCompatActivity {
     private FragmentTransaction tran;
     private F1Fragment f1;
     private F2Fragment f2;
+    private boolean isF1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,9 +25,15 @@ public class MainActivity extends AppCompatActivity {
         tran.add(R.id.container, f1);
         tran.commit();
 
+        isF1 = true;
     }
 
     public void go(View v){
+        isF1 = !isF1;
+        tran = fmgr.beginTransaction();
+        tran.replace(R.id.container, isF1?f1:f2);
+        //tran.addToBackStack(null);
+        tran.commit();
 
     }
 

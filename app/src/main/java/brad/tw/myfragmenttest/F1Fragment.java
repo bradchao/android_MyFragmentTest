@@ -17,6 +17,7 @@ public class F1Fragment extends Fragment {
 
     public F1Fragment() {
         // Required empty public constructor
+        
     }
 
 
