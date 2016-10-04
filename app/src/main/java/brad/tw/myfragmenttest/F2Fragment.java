@@ -6,13 +6,14 @@ import android.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.TextView;
 
 
 /**
  * A simple {@link Fragment} subclass.
  */
 public class F2Fragment extends Fragment {
-
+    private TextView tv;
 
     public F2Fragment() {
         // Required empty public constructor
@@ -22,8 +23,10 @@ public class F2Fragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_f2, container, false);
+        View view = inflater.inflate(R.layout.fragment_f1, container, false);
+        tv = (TextView)view.findViewById(R.id.f1_tv);
+        tv.setText("Hello, TV2");
+        return view;
     }
 
 }
